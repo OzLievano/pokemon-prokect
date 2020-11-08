@@ -7,11 +7,10 @@ const Navigation = () => {
     return (
         <div>
             <Navbar color="dark">
-                <NavbarBrand href="/">
-                   <NavigationHeader>
-                       PokeFinder 
-                    </NavigationHeader>
-                </NavbarBrand>
+                <NavigationHeader> 
+                    <NavLink to="/">PokeFinder</NavLink>
+                </NavigationHeader> 
+                    <img src={img} alt="pokemonball" style={{width:'10%'}}></img>
             </Navbar>
         </div>
     )
