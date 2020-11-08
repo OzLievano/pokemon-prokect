@@ -16,6 +16,12 @@ class App extends React.Component {
 
   componentDidMount(){
     axios.get('https://pokeapi.co/api/v2/pokemon')
+    .then(res=>{
+      this.setState({
+        pokemon:res.data.results
+      })
+    })
+    .catch(err=>console.log('this is your error:',err))
   }
 
   render() { 
