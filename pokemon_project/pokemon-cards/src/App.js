@@ -18,7 +18,7 @@ class App extends React.Component {
     axios.get('https://pokeapi.co/api/v2/pokemon')
     .then(res=>{
       this.setState({
-        pokemon:res.data.results
+        pokemons:res.data.results
       })
     })
     .catch(err=>console.log('this is your error:',err))
@@ -29,7 +29,7 @@ class App extends React.Component {
     <div className="App">
       <Navigation />
       <PokemonSearch/>
-      <PokemonList/>
+      <PokemonList list={this.state.pokemons}/>
     </div> 
   );
   }
