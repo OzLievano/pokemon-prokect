@@ -28,8 +28,7 @@ class App extends React.Component {
     return (  
     <div className="App">
       <Navigation />
-      <PokemonSearch/>
-      <PokemonList list={this.state.pokemons}/>
+      <PokemonSearch list={this.state.pokemons}/>
     </div> 
   );
   }

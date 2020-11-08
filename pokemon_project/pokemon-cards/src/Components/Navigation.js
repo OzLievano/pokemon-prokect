@@ -1,15 +1,15 @@
 import React from 'react'
 import img from '../pokemonbal.jpg';
-import {Navbar,NavbarBrand,NavLink,NavItem} from 'reactstrap';
+import {Navbar,NavLink} from 'reactstrap';
 import NavigationHeader from './NavigationHeader'
 
 const Navigation = () => {
     return (
         <div>
             <Navbar color="dark">
-                <NavigationHeader> 
-                    <NavLink to="/">PokeFinder</NavLink>
-                </NavigationHeader> 
+                    <NavLink href="/">
+                        <NavigationHeader> PokeFinder </NavigationHeader>
+                    </NavLink> 
                     <img src={img} alt="pokemonball" style={{width:'10%'}}></img>
             </Navbar>
         </div>
