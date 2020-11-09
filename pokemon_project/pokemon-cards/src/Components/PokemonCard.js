@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import {Card, CardHeader,CardImg} from 'reactstrap';
 
 const PokemonCard = (props) => {
     console.log(props)
     return (
         <div>
-            PokemonCard
+           <Card>
+            <CardHeader>
+                {props.pokemon.name}
+            </CardHeader>
+           </Card>
         </div>
     )
 }

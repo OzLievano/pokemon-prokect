@@ -8,9 +8,9 @@ const PokemonList = (props) => {
         <div>
             {props.list.map((item,index)=>{
                 return (
-                    <Container>
+                    <Container xs="4">
                         <Row xs="4">
-                            <Col>
+                            <Col xs="4">
                                 <Card>
                                     <PokemonCard key={index} pokemon={item}/>
                                 </Card>
